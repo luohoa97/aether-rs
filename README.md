@@ -1,6 +1,6 @@
 # Aether Rust
 
-Installation guide
+## Installation guide
 
 ```fish
 cargo install aether-rs
@@ -44,3 +44,17 @@ aether version
    Targets: amd64, arm64, 386, arm
    Stdlib: Enabled
 ```
+
+## Uninstalling
+
+It is important to install the installer again as it has been deleted when you installed Aether.
+
+```fish
+cargo install aether-rs
+```
+
+```fish
+aether remove
+```
+
+The installer will uninstall Aether, then it will start deleting itself
