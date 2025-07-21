@@ -99,5 +99,20 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         return Err("Unsupported package format".into());
     }
 
+    let package_name = "aether-rs";
+
+    println!("Uninstalling the installer using cargo...");
+
+    let status = Command::new("cargo")
+        .arg("uninstall")
+        .arg(package_name)
+        .status()?;
+
+    if status.success() {
+        println!("You can now run aether by typing 'aether' in your terminal.");
+    } else {
+        eprintln!("Failed to uninstall installer via cargo, please uninstall manually.");
+    }
+
     Ok(())
 }
