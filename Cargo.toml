@@ -11,9 +11,9 @@ keywords = ["aether", "installer"]
 categories = ["command-line-utilities", "network-programming"]
 
 [dependencies]
-reqwest = { version = "*", features = ["blocking", "json"] }
-serde = { version = "*", features = ["derive"] }
-sha2 = "0.10"
+reqwest = { version = ">=0.11, <0.12", features = ["blocking", "json"] }
+serde = { version = ">=1.0, <2.0", features = ["derive"] }
+sha2 = ">=0.10, <0.11"
 
 [[bin]]
 name = "aether"
