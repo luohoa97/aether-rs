@@ -7,10 +7,14 @@ description = "A wrapper designed to allow you to install aether"
 license = "MIT"
 repository = "https://github.com/luohoa97/aether-rs"
 readme = "README.md"
-keywords = ["aether", "installer", "linux", "rpm", "deb", "flatpak"]
+keywords = ["aether", "installer"]
 categories = ["command-line-utilities", "network-programming"]
 
 [dependencies]
 reqwest = { version = "*", features = ["blocking", "json"] }
 serde = { version = "*", features = ["derive"] }
 sha2 = "0.10"
+
+[[bin]]
+name = "aether"
+path = "src/main.rs"
