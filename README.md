@@ -57,4 +57,14 @@ cargo install aether-rs
 aether remove
 ```
 
-The installer will uninstall Aether, then it will start deleting itself
+## Updating
+
+Updating isn't done in the installer, it's done in aether itself.
+To update aether, simply use the cli tool inside of aether.
+
+Required tools:
+> aria2c
+
+```fish
+aether update
+```
